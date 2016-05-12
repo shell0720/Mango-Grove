@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mango Grove</title>
+
+    <link href="/vendors/Static_Seed_Project/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/vendors/Static_Seed_Project/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="/vendors/Static_Seed_Project/css/animate.css" rel="stylesheet">
+    <link href="/vendors/Static_Seed_Project/css/style.css" rel="stylesheet">
+    <!--Vendor Scripts-->
+    <script src="/vendors/Static_Seed_Project/js/jquery-2.1.1.js"></script>
+    <script src="/vendors/Static_Seed_Project/js/bootstrap.min.js"></script>
+    <script src="/vendors/Static_Seed_Project/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="/vendors/Static_Seed_Project/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <!-- <script src="/vendors/Static_Seed_Project/js/plugins/iCheck/iCheck.min.js"></script>
+     Custom and plugin javascript -->
+    <script src="/vendors/Static_Seed_Project/js/inspinia.js"></script>
+    <script src="/vendors/Static_Seed_Project/js/jquery.cookie.js"></script>
+    <script src="/vendors/Static_Seed_Project/js/plugins/pace/pace.min.js"></script>
+    <script src="/vendors/Static_Seed_Project/js/jquery.cookie.js"></script>
+    <!-- local css file added by Mango Grove for parts not included in template tlvh -->
+    <link href="/vendors/Static_Seed_Project/css/grove.css" rel="stylesheet">
+
+    <script type="text/javascript" src="/assets/scripts/app.js"></script>
+
+</head>
+
+<body class="gray-bg">
+
+  <div class="log-reg-logo">
+  <a href="/assets/views/index.html"><img src="/assets/views/images/MANGO_logo_500x158.png" width="400"/></a>
+  </div>
+
+<div class="middle-box text-center loginscreen   animated fadeInDown">
+  <div>
+              <h2>Sign up</h2>
+            <form class="m-t" role="form" action="login.html">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Name" required="">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email" required="">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Password" required="">
+                </div>
+                <div class="form-group">
+          <div class="dropdown">
+            <label for="sell">Choose your school</label>
+            <select class="form-control" id="sell">
+            <option>
+              Carlson School of Management
+            </option>
+            <option>
+              Macalester
+            </option>
+          </select>
+        </div>
+                <div class="form-group">
+                        <div class="checkbox i-checks"><label> <input type="checkbox"><i></i> Agree to the terms of use and privacy policy </label></div>
+                </div>
+                <button type="submit" class="btn btn-primary block full-width m-b"><a class="plain" href="/assets/views/user.html">Register</a> </button>
+
+                <p class="text-muted text-center"><small>Already have an account?</small></p>
+                <a class="btn btn-sm btn-white btn-block" href="login.html">Login</a>
+            </form>
+            <p class="m-t"> <small>Inspinia web app framework base on Bootstrap 3 &copy; 2014</small> </p>
+        </div>
+    </div>
+<!--
+
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/plugins/iCheck/icheck.min.js"></script> -->
+    <script>
+        $(document).ready(function(){
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green',
+            });
+        });
+    </script>
+</body>
+
+</html>

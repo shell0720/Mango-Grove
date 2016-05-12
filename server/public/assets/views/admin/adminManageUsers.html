@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mango Grove</title>
+
+    <link href="/vendors/Static_Seed_Project/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/vendors/Static_Seed_Project/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="/vendors/Static_Seed_Project/css/animate.css" rel="stylesheet">
+    <link href="/vendors/Static_Seed_Project/css/style.css" rel="stylesheet">
+
+    <!-- local css file added by Mango Grove for parts not included in template tlvh -->
+    <link href="/vendors/Static_Seed_Project/css/grove.css" rel="stylesheet">
+
+    <!-- Mainly scripts -->
+    <script src="/vendors/Static_Seed_Project/js/jquery-2.1.1.js"></script>
+    <script src="/vendors/Static_Seed_Project/js/bootstrap.min.js"></script>
+    <script src="/vendors/Static_Seed_Project/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="/vendors/Static_Seed_Project/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="/vendors/Static_Seed_Project/js/inspinia.js"></script>
+    <script src="/vendors/Static_Seed_Project/js/jquery.cookie.js"></script>
+    <script src="/vendors/Static_Seed_Project/js/plugins/pace/pace.min.js"></script>
+
+    <!-- <script type="text/javascript" src="/assets/scripts/app.js"></script> -->
+    <script type="text/javascript" src="/assets/scripts/admin.js"></script>
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Susan Wollan Fan</strong>
+                               </span> <span class="text-muted text-xs block">Founder MANGO <b class="caret"></b></span> </span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a href="/assets/views/index.html">Log out</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            <img src="/assets/views/images/mango_logo_M.png" width="30" height="30" />
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/assets/views/admin/admin.html"><i class="fa fa-home"></i> <span class="nav-label">Communities</span></a>
+                    </li>
+                    <li>
+                        <a href="/assets/views/admin/adminFlaggedContent.html"><i class="fa fa-flag"></i> <span class="nav-label">Flagged Content</span> </a>
+                    </li>
+                    <li  class="active">
+                        <a href="/assets/views/admin/adminManageUsers.html"><i class="fa fa-user"></i> <span class="nav-label">Manage Users</span> </a>
+                    </li>
+                    <li>
+                        <a href="/assets/views/admin/adminFeaturePosts.html"><i class="fa fa-star"></i> <span class="nav-label">Feature Posts</span> </a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="gray-bg">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                        <!-- <form role="search" class="navbar-form-custom" method="post" action="#">
+                            <div class="form-group">
+                                <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
+                            </div>
+                        </form> -->
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li>
+                            Administrator
+                        </li>
+                        <li>
+                            <a href="/assets/views/index.html">
+                                <i class="fa fa-sign-out"></i> Log out
+                            </a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="wrapper wrapper-content animated fadeInRight">
+                        <div class="ibox-content forum-post-container">
+                            <div class="forum-post-info">
+                                <h4><span class="text-navy"><i class="fa fa-user"></i>
+                                  Manage Users
+                                </span>
+                              </h4>
+                            </div>
+
+                            <form id="block-user-form">
+
+                                <fieldset class="form-group">
+                                    <label for="userName"></br>Email address</label>
+                                    <input type="email" class="form-control" id="userName" name="userName" placeholder="Email address you would like to block." required>
+                                </fieldset>
+                                <button type="button submit" id="blockUser" class="btn btn-default" data-dismiss="modal">Submit</button>
+                              </br></br>
+                            </form>
+
+                            <div class="blocked-users-container">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="pull-right">
+                    MANGO Mentors
+                </div>
+                <div>
+                    <strong>Copyright</strong> MANGO Mentors &copy; 2016
+                </div>
+            </div>
+
+            <!-- end forum code  -->
+        </div>
+    </div>
+  </div>
+</body>
+
+</html>

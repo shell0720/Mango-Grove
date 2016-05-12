@@ -1,0 +1,49 @@
+
+<script src="/assets/scripts/guest_modal_app.js"></script>
+
+
+<div class="modal fade" id="guestCommentModal" tabindex="-1" role="dialog" aria-labelledby="guestCommentLabel">
+
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="guestCommentLabel">Share with us!</h4>
+      </div>
+        <div class="modal-body">
+        <form id="postMessageForm">
+          <h4>What would you like to share?</h4>
+          <label class="radio-inline" style="font-weight:bold">
+            <img src="/assets/views/images/mango.png" height="50" width="50" />Moment</label>
+            <input type="radio" name="type" value="mm" checked="checked" />
+          <label class="radio-inline" style="font-weight:bold">
+            <img src="/assets/views/images/noun_75102_cc.png" height="50" width="50" />Encourage</label>
+            <input type="radio" name="type" value="af" />
+          <label class="radio-inline" style="font-weight:bold">
+            <img src="/assets/views/images/noun_24896_cc_mod.png" height="50" width="50" />Shoutout</label>
+            <input type="radio" name="type" value="so" />
+
+          <fieldset class="form-group">
+            <label for="guestTextarea">Type here</label>
+            <textarea class="form-control" id="guestTextarea" name="content" rows="3" maxlength="150"></textarea>
+            <small class="text-muted"><span class="chars">150</span> characters remaining</small></br>
+          </fieldset>
+
+          <fieldset class="form-group">
+            <label for="guestEmail">Email address</label>
+            <input type="email" class="form-control" id="guestEmail" name="email" placeholder="Enter email">
+            <small class="text-muted">We'll never share your email with anyone else.</small>
+          </fieldset>
+
+          <fieldset class="form-group">
+            <label for="username">User Name</label>
+            <input type="text" class="form-control" id="username" name="name" placeholder="User Name">
+          </fieldset>
+          <div class="modal-footer">
+            <button type="button" id="createGuestPost" class="btn btn-primary" data-dismiss="modal">Post</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

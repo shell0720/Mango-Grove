@@ -1,0 +1,39 @@
+{
+  "name": "mango_grove",
+  "version": "1.0.0",
+  "description": "",
+  "node": "5.7.1",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/app.js"
+  },
+  "author": "Team Mango 2016 (Tracey Van Haften, Brady Peterson, Michelle Wang, Joette Poehler, Evan Kimlinger)",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "bootstrap": "^3.3.6",
+    "bootstrap-multiselect": "^0.9.13-1",
+    "express": "^4.13.4",
+    "fastselect": "^0.3.0",
+    "grunt": "^1.0.1",
+    "grunt-contrib": "^0.11.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "icheck": "^1.0.2",
+    "jquery": "^2.2.3",
+    "jshint": "^2.9.2",
+    "mongoose": "^4.4.12",
+    "path": "^0.12.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ekimlinger/Mango_Grove.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ekimlinger/Mango_Grove/issues"
+  },
+  "homepage": "https://github.com/ekimlinger/Mango_Grove#readme"
+}

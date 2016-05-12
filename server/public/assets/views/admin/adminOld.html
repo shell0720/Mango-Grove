@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mango Grove</title>
+
+    <link href="/vendors/Static_Seed_Project/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/vendors/Static_Seed_Project/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="/vendors/Static_Seed_Project/css/animate.css" rel="stylesheet">
+    <link href="/vendors/Static_Seed_Project/css/style.css" rel="stylesheet">
+
+    <!-- local css file added by Mango Grove for parts not included in template tlvh -->
+    <link href="/vendors/Static_Seed_Project/css/grove.css" rel="stylesheet">
+
+    <!-- Mainly scripts -->
+    <script src="/vendors/Static_Seed_Project/js/jquery-2.1.1.js"></script>
+    <script src="/vendors/Static_Seed_Project/js/bootstrap.min.js"></script>
+    <script src="/vendors/Static_Seed_Project/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="/vendors/Static_Seed_Project/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="/vendors/Static_Seed_Project/js/inspinia.js"></script>
+    <script src="/vendors/Static_Seed_Project/js/jquery.cookie.js"></script>
+    <script src="/vendors/Static_Seed_Project/js/plugins/pace/pace.min.js"></script>
+
+    <script type="text/javascript" src="/assets/scripts/app.js"></script>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                              <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Susan Wollan Fan</strong>
+                               </span> <span class="text-muted text-xs block">Founder MANGO <b class="caret"></b></span> </span> </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a href="/assets/views/index.html">Log out</a></li>
+                            </ul>
+                    </div>
+                    <div class="logo-element">
+                        <img src="/assets/views/images/mango_logo_M.png" width="30" height="30" />
+                    </div>
+                </li>
+                <li class="active">
+                    <a href="/assets/views/admin/admin.html"><i class="fa fa-home"></i> <span class="nav-label">Admin Home</span></a>
+                </li>
+                <li>
+                    <a href="/assets/views/admin/adminUser.html"><i class="fa fa-th-large"></i> <span class="nav-label">Communities</span>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="/assets/views/admin/adminFlaggedContent.html"><i class="fa fa-flag"></i> <span class="nav-label">Flagged Content</span> </a>
+                </li>
+                <li>
+                    <a href="/assets/views/admin/adminManageUsers.html"><i class="fa fa-user"></i> <span class="nav-label">Manage Users</span> </a>
+                </li>
+                <li>
+                    <a href="/assets/views/admin/adminFeaturePosts.html"><i class="fa fa-star"></i> <span class="nav-label">Feature Posts</span> </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom">
+            <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header">
+                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                    <!-- <form role="search" class="navbar-form-custom" method="post" action="#">
+                        <div class="form-group">
+                            <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
+                        </div>
+                    </form> -->
+                </div>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li>
+                      Administrator
+                    </li>
+                    <li>
+                        <a href="/assets/views/index.html">
+                            <i class="fa fa-sign-out"></i> Log out
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+
+        <div class="col-md-offset-1 col-md-10" role="document">
+            <div class="modal-content-embed">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+                <div class="modal-body">
+
+                <form id="communityPostMessageForm">
+                  <div class="post-icon-group">
+                  <label class="radio-inline" style="font-weight:bold"><input type="radio" name="type" value="mm" checked="checked" >
+                    <img src="/assets/views/images/mango.png" height="50" width="50" />Share Moment</label>
+                  <label class="radio-inline" style="font-weight:bold"><input type="radio" name="type" value="af" >
+                    <img src="/assets/views/images/noun_75102_cc.png" height="50" width="50" />Encouragement</label>
+                  <label class="radio-inline" style="font-weight:bold"><input type="radio" name="type" value="so" >
+                    <img src="/assets/views/images/noun_24896_cc_mod.png" height="50" width="50" />Shoutout</label>
+                  </div>
+                  <fieldset class="form-group community-list">
+                    <label><input type="checkbox" name="global" value="true"> Global</label><span class="right-space">&nbsp;</span>
+                  </fieldset>
+                  <span id="errorMessage"></span>
+                  <fieldset class="form-group">
+                    <!--BRADY CHANGES-->
+                    <textarea class="form-control" id="communityTextarea" name="content" rows="3" maxlength="150" placeholder="Talk to us!"></textarea>
+                      <small class="text-muted"><span class="chars">150</span> characters remaining</small><br /><br />
+                      <!--END OF BRADY CHANGES-->
+                      <div hidden>
+                        <label for="guestEmail" >Email address</label>
+                        <input type="email" class="form-control" id="communityEmail" name="email" placeholder="Enter email" value="bpeterson1663@gmail.com" />
+                        <small class="text-muted" >We'll never share your email with anyone else.</small>
+
+                    <label for="username">Name</label>
+                    <input type="text" class="form-control" id="username" name="name" placeholder="Name" value="Brady" >
+                  </div>
+                  </fieldset>
+                  <div class="modal-footer">
+                    <button type="button" id="createCommunityPost" class="btn btn-primary" data-dismiss="modal">Post</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+
+
+            <div class="see-more-community"></div>
+              <div class="see-more-community-message"></div>
+
+
+        <!-- inserting social feed code here tlvh -->
+
+        <div class="row">
+            <div class="col-lg-12">
+                <!--TEST BUTTONS-->
+                <!--data-type IMPORTANT PLEASE DO NOT REMOVE. Used for filtering-->
+
+                <div class="wrapper wrapper-content  animated fadeInRight">
+                    <div class="row">
+
+                        <div class="col-md-10 col-md-offset-1">
+                            <h3><span class="text-navy message-type">Moments</span>
+
+                      <div class="filter-messages-box"><span class="small-type">
+                        <button data-type="mm" class="filter-messages react-button"></i>Moments</button>
+                        <button data-type="af" class="filter-messages react-button">Encouragement</button>
+                        <button data-type="so" class="filter-messages react-button">Shout-Outs</button>
+                        <button data-type="all" class="filter-messages react-button">All</button>
+                      </span>
+                      </div>
+                      <div class="clear-float"></div>
+                            <!--END OF TEST BUTTONS-->
+                            </h3>
+
+                            <!-- inserting social feed code here tlvh -->
+
+                        <!-- posts are appended here -->
+                          <!-- </div>
+                          </div> -->
+
+                          <!--Append New Comments here to the comment-container class-->
+                          <div class="social-feed-box">
+
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+             </div>
+
+            <div class="footer">
+                <div class="pull-right">
+                    MANGO Mentors
+                </div>
+                <div>
+                    <strong>Copyright</strong> MANGO Mentors &copy; 2016
+                </div>
+            </div>
+        </div>
+        <!-- end forum code  -->
+    </div>
+</div>
+
+<!-- Start of Compose Modal
+<div class="modal fade" id="guestCommentModal" tabindex="-1" role="dialog" aria-labelledby="guestCommentLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="userCommentLabel">Guest Comments</h4>
+      </div>
+        <div class="modal-body">
+        <form id="postMessageForm">
+          <p>What would you like to share?</p>
+          <!-BRADY CHANGES
+          <label class="radio-inline"><input type="radio" name="type" value="mm" id="mm">Mango Moment</label>
+          <label class="radio-inline"><input type="radio" name="type" value="af" id="af">Affirmation</label>
+          <label class="radio-inline"><input type="radio" name="type" value="so" id="so">Shout-Out</label>
+
+          <fieldset class="form-group">
+            <label for="guestTextarea">Type here</label>
+            <textarea class="form-control" id="guestTextarea" name="content" rows="3"></textarea>
+          </fieldset>
+
+          <fieldset class="form-group">
+            <label for="guestEmail">Email address</label>
+            <input type="email" class="form-control" id="guestEmail" name="email" placeholder="Enter email">
+            <small class="text-muted">We'll never share your email with anyone else.</small>
+          </fieldset>
+
+          <fieldset class="form-group">
+            <label for="username">User Name</label>
+            <input type="text" class="form-control" id="username" name="name" placeholder="User Name">
+          </fieldset>
+          <div class="modal-footer">
+            <button type="button" id="createGuestPost" class="btn btn-default" data-dismiss="modal">Post</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div> -->
+<!--END of Message Modal-->
+<div id="loadComposeModal"></div>
+<div id="loadCommentModal"></div>
+
+</body>
+
+</html>

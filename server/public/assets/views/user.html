@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mango Grove</title>
+
+    <link href="/vendors/Static_Seed_Project/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/vendors/Static_Seed_Project/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="/vendors/Static_Seed_Project/css/animate.css" rel="stylesheet">
+    <link href="/vendors/Static_Seed_Project/css/style.css" rel="stylesheet">
+    <!--Vendor Scripts-->
+    <script src="/vendors/Static_Seed_Project/js/jquery-2.1.1.js"></script>
+    <script src="/vendors/Static_Seed_Project/js/bootstrap.min.js"></script>
+    <script src="/vendors/Static_Seed_Project/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="/vendors/Static_Seed_Project/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <!-- Custom and plugin javascript -->
+    <script src="/vendors/Static_Seed_Project/js/inspinia.js"></script>
+    <script src="/vendors/Static_Seed_Project/js/jquery.cookie.js"></script>
+    <script src="/vendors/Static_Seed_Project/js/plugins/pace/pace.min.js"></script>
+    <script src="/vendors/Static_Seed_Project/js/jquery.cookie.js"></script>
+    <!-- local css file added by Mango Grove for parts not included in template tlvh -->
+    <link href="/vendors/Static_Seed_Project/css/grove.css" rel="stylesheet">
+
+    <script type="text/javascript" src="/assets/scripts/community_page_app.js"></script>
+    <!--<script src="/assets/scripts/user_modal_app.js"></script>-->
+
+</head>
+
+<body>
+
+  <div id="loadWelcomeModal"></div>
+
+    <div id="wrapper">
+
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+
+
+                      <!--  user display -->
+                      <div class="dropdown profile-element">
+                        <span><img alt="image" class="img-circle" src="/assets/views/images/brady.jpg" width="70" height="70"></span>
+                          <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+
+                              <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Brady Peterson</strong></span>
+                             <span class="text-muted text-xs block">Student, Prime Digital Academy<b class="caret"></b></span> </span>
+                          </a>
+                          <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                              <li><a href="/assets/views/index.html">Log out</a></li>
+                          </ul>
+                      </div>
+
+                      <div class="logo-element">
+                          <img src="/assets/views/images/mango_logo_M.png" width="30" height="30" />
+                      </div>
+
+
+                    </li>
+
+                    <li class="active">
+                        <a href="#"><i class="fa fa-home"></i> <span class="nav-label">My Communities</span>
+                        <span class="fa arrow"></span> </a>
+
+                        <ul class="nav nav-second-level collapse">
+                          <!--BRADY CHANGE-->
+                          <li><a href="#messageTop" class="community-global" name="global" data-location="Global">Global</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#" class="load-welcome"><i class="fa fa-play"></i> <span class="nav-label">Get Started</span></a>
+                    </li>
+
+                    <li>
+                        <!--BRADY CHANGE-->
+                        <a class="compose-feedback" href="#"><i class="fa fa-paper-plane"></i> <span class="nav-label">Send Feedback</span> </a>
+                      </li>
+
+
+                </ul>
+
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="gray-bg">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+
+                        <!-- placeholder for search if added in future -->
+                        <form role="search" class="navbar-form-custom" method="post" action="#">
+                        <div class="form-group">
+                            <input type="text" placeholder="Search..." class="form-control" name="top-search" id="top-search">
+                        </div>
+                    </form>
+                    </div>
+
+                    <!-- hide log out for global page -->
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li>
+                            <a href="/assets/views/index.html">
+                                <i class="fa fa-sign-out"></i> Log out
+                            </a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+
+
+<div class="row">
+  <div class="col-lg-12 three-shares">
+
+                    <div class="col-md-3 top-space">
+                        <div class="text-center">
+                            <div>
+                              <img src="/assets/views/images/ShareMoment.jpg" width="100%" />
+                              <h1 class="vertical-space">Share a Moment</h1>
+                            </div>
+
+                            <div>
+                              <img src="/assets/views/images/Encourage.jpg" width="100%" />
+                              <h1 class="vertical-space">Encourage</h1>
+                            </div>
+
+                            <div>
+                              <img src="/assets/views/images/Shout-Out.jpg" width="100%" />
+                              <h1 class="vertical-space">Shout-Out</h1>
+                            </div>
+                        </div>
+                    </div>
+
+<!-- start of social feed code -->
+
+                    <div class="wrapper wrapper-content  animated fadeInRight">
+
+
+                      <!--start of modal placement -->
+                      <!-- <div class="modal fade" id="guestCommentModal" tabindex="-1" role="dialog" aria-labelledby="guestCommentLabel"> -->
+
+                        <div class=" col-md-9" role="document">
+                            <div class="modal-content-embed">
+                                <div class="modal-body">
+
+                                <form id="communityPostMessageForm">
+                                  <div class="post-icon-group">
+                                  <label class="radio-inline" style="font-weight:bold"><input type="radio" name="type" value="mm" checked="checked" >
+                                    <img src="/assets/views/images/mango.png" height="50" width="50" />Share Moment</label>
+                                  <label class="radio-inline" style="font-weight:bold"><input type="radio" name="type" value="af" >
+                                    <img src="/assets/views/images/noun_75102_cc.png" height="50" width="50" />Encouragement</label>
+                                  <label class="radio-inline" style="font-weight:bold"><input type="radio" name="type" value="so" >
+                                    <img src="/assets/views/images/noun_24896_cc_mod.png" height="50" width="50" />Shoutout</label>
+                                  </div>
+                                  <fieldset class="form-group community-list">
+                                    <label><input type="checkbox" name="global" value="true"> Global</label><span class="right-space">&nbsp;</span>
+                                  </fieldset>
+                                  <span id="errorMessage"></span>
+                                  <fieldset class="form-group">
+                                    <!--BRADY CHANGES-->
+                                    <textarea class="form-control" id="communityTextarea" name="content" rows="3" maxlength="150" placeholder="Talk to us!"></textarea>
+                                      <small class="text-muted"><span class="chars">150</span> characters remaining</small><br /><br />
+                                      <!--END OF BRADY CHANGES-->
+                                      <div hidden>
+                                        <label for="guestEmail" >Email address</label>
+                                        <input type="email" class="form-control" id="communityEmail" name="email" placeholder="Enter email" value="bpeterson1663@gmail.com" />
+                                        <small class="text-muted" >We'll never share your email with anyone else.</small>
+
+                                    <label for="username">Name</label>
+                                    <input type="text" class="form-control" id="username" name="name" placeholder="Name" value="Brady" >
+                                  </div>
+                                  </fieldset>
+                                  <div class="modal-footer">
+                                    <button type="button" id="createCommunityPost" class="btn btn-primary" data-dismiss="modal">Post</button>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                            <div class="see-more-community"></div>
+                              <div class="see-more-community-message"></div>
+
+
+                      <!-- end of modal placement -->
+
+
+
+                            <div class="col-md-9">
+                                <h3><span class="text-navy current-community">Global</span><span class="message-type text-navy">Moments</span>
+
+                          <div class="filter-messages-box"><span class="filter-messages-type">
+                            <button data-type="mm" class="filter-messages react-button"><img src="/assets/views/images/mango_small.png" height="20"  />Moments</button>
+                            <button data-type="af" class="filter-messages react-button"><img src="/assets/views/images/noun_75102_cc.png" height="20" width="20" />Encouragements</button>
+                            <button data-type="so" class="filter-messages react-button"><img src="/assets/views/images/noun_24896_cc_mod.png" height="20" width="20" />Shout-Outs</button>
+                            <button data-type="all" class="filter-messages react-button" autofocus="true">All</button>
+                          </span>
+                          </div>
+                          <!-- <div class="clear-float"></div> -->
+                                <!--END OF TEST BUTTONS-->
+                                </h3>
+
+                          <div class="social-feed-box">
+                            <!-- posts are appended here -->
+                          </div>
+                          </div>
+
+
+
+                    </div>
+
+    </div>
+
+  </div>
+
+            <!-- end forum code  -->
+
+
+            <!-- FOOTER -->
+            <div class="footer">
+                <div class="pull-right">
+                    <a href="/assets/views/admin/admin.html">MANGO Mentors</a>
+                </div>
+                <div>
+                    <strong>Copyright</strong> MANGO Mentors &copy; 2016
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+<!--BRADY CHANGE-->
+
+<div id="loadCommunityCommentModal"></div>
+<div id="loadFeedbackModal"></div>
+
+</body>
+
+</html>

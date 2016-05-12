@@ -1,0 +1,128 @@
+.react-options {
+  margin-top: 10px;
+  border-top: 1px solid #f1f1f1;
+  padding-top: 6px;
+  font-size: 15px;
+}
+
+.react-button {
+  border: 0;
+  background-color: #f3f3f4;
+}
+
+.react-button:hover,
+.react-button:focus,
+.react-button:active {
+  background-color: #fff;
+  color: #EE6631;
+  outline: none;
+}
+
+.flag-button {
+  position: absolute;
+  right: 30px;
+  color: #C0C0C0;
+}
+
+.flag-link a {
+  position: absolute;
+  right: 30px;
+  color: #C0C0C0;
+}
+
+.small-type {
+  font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  font-weight: normal;
+}
+
+.side-images {
+  float:left;
+  background-color: yellow;
+  width: 300px;
+  height: 1000px;
+}
+
+.three-shares {
+  margin-bottom: 20px;
+}
+
+.filter-messages-box {
+  float: right;
+}
+
+.filter-messages-type {
+  font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.clear-float {
+  clear: both;
+}
+
+.underline {
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.underline-comment {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.post-icon {
+  margin-top: 10px;
+  float: right;
+  width: 50px;
+  height: 50px;
+}
+
+.log-reg-logo {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.indent {
+  margin-left: 15px;
+}
+
+.plain  {
+  color: #fff;
+}
+
+.vertical-space {
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.top-space {
+  margin-top: 25px;
+}
+
+.right-space {
+  margin-right: 20px;
+}
+.modal-header {
+  border: 0;
+}
+
+.modal-footer {
+  border: 0;
+}
+
+.post-icon-group {
+  /*width: 100%;*/
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.modal-content-embed {
+    background-clip: padding-box;
+    background-color: #FFFFFF;
+    border: 1px solid #e7eaec;
+    /*border-radius: 4px;*/
+    /*box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);*/
+    outline: 0 none;
+    position: relative;
+    margin-bottom: 20px;
+}
